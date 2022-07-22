@@ -1,43 +1,124 @@
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
+/* navbar */
+nav.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('images/heroImage.jpeg');
-    background-size:cover;
-    position:relative;
+a.nav-link, a.navbar-brand {
+  color: white;
 }
-/* text css above hero image*/
+
+a.nav-link {
+  font-size: 20px;
+}
+
+a.navbar-brand.nav-title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.navbar {
+  background-color: hsla(329, 83%, 67%, 1);
+  font-family: "Poppins", sans-serif;
+  
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: hsla(330, 79%, 76%, 1);
+}
+
 /* hero background image */
 .bgimage {
     height:100vh;
     background: url('images/heroImage.jpg');
     background-size:cover;
     position:relative;
+   
 }
 /* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
 .hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: hsl(210, 45%, 28%);
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+  display: inline-block;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+h1 .type{
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: .10em solid hsl(209, 46%, 48%);
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1s steps(25, end) forwards;
+}
+h1 .type2{
+    font-size: 2rem; 
+    overflow: hidden;
+    border-right: .10em solid hsl(209, 46%, 48%);
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1s steps(25, end) forwards;
+    animation-delay: 1s;
+}
+h1 .type3{
+    font-size: 2rem; 
+    overflow: hidden;
+    border-right: .10em solid hsl(209, 46%, 48%); 
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1s steps(25, end) forwards;
+    animation-delay: 2s;
+}
+
+h1 .type4{
+    font-size: 2rem; 
+    overflow: hidden;
+    border-right: .10em solid hsl(209, 46%, 48%); 
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1s steps(25, end) forwards;
+    animation-delay: 3s;
+}
+
+h1 .type5{
+    font-size: 2rem; 
+    overflow: hidden;
+    border-right: .10em solid hsl(209, 46%, 48%); 
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1s steps(25, end) forwards;
+    animation-delay: 4s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
 }
 
 /* spacing on all sections */
-#about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+#about, #resume, #portfolio, #contact {
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
 #contact {
     padding-bottom: 4rem;
@@ -45,23 +126,45 @@
 
 #contact {
     padding-bottom: 4rem;
+}
+
+
+/* about section  css */
+#about {
+  background-color:hsl(209, 46%, 48%);
+  padding-bottom: 70px;
 }
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+    border-radius: 50%;
 }
 
+.about-me-text {
+  font-family: "Poppins", sans-serif;  
+  
+}
 
-/* services section css */
+h1.text-center {
+  padding-top: 22px;
+}
+
+div.about-me-text {
+  padding-left: 40px !important;
+}
+
+/* portfolio section css */
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
-    color: #008000;
+
+.btn-success  {
+  background-color: hsl(209, 46%, 48%) !important;
 }
-.servicesText:hover {
-    border: 1px solid #008000;
+.card-img-top {
+  height: 200px;
 }
+
 
 /* social media icons styling */
 .social-icons {
