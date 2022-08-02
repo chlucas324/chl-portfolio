@@ -127,19 +127,6 @@ h1 .type5 {
   }
 }
 
-/* spacing on all sections */
-/* #about, #resume, #portfolio, #contact {
-    margin-top: 5rem;
-    padding-top: 5rem;
-} */
-/* #contact {
-    padding-bottom: 4rem;
-}
-
-#contact {
-    padding-bottom: 4rem;
-} */
-
 /* about section  css */
 #about {
   background-color: hsl(209, 46%, 48%);
@@ -206,6 +193,12 @@ div.card {
   font-weight: 600;
   color: #1c334a;
   padding: 110px;
+}
+
+
+#contact h5 {
+  font-size: 16.5px;
+  text-align: right;
 }
 
 /*  resume styling */
